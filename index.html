@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +8,10 @@
 <body>
     <h1>My Questionnaire</h1>
     <form id="myForm" onsubmit="event.preventDefault(); submitForm();">
+        <label for="participantId">Participant ID: </label>
+        <input type="text" id="participantId" name="participantId">
+        <br>
+        <br>
         <!-- Form will be generated here -->
     </form>
     <button type="submit" form="myForm">Submit</button>
