@@ -17,8 +17,15 @@ p {
     margin-bottom: 20px;
 }
 
+select {
+    margin-left: 5px;      /* space between the label and the select dropdown */
+    margin-right: 20px;    /* space between the select dropdown and the next label */
+}
+
 label {
     margin-right: 10px;
+    display: inline-block; 
+    margin-bottom: 30px; 
 }
 
 #submit-button-container {
