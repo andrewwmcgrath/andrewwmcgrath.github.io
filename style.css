@@ -9,6 +9,18 @@ form {
 
 h2 {
     font-size: 1.5em; /* enlarge the text */
-    text-decoration: underline; /* underline the text */
     font-weight: bold; /* make the text bold */
+    text-decoration: none; /* remove underline */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+#submit-button-container {
+    margin-top: 20px;
 }
