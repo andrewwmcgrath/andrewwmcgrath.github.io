@@ -7,6 +7,16 @@ form {
     margin-top: 20px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+}
+
 h2 {
     font-size: 1.5em; /* enlarge the text */
     font-weight: bold; /* make the text bold */
