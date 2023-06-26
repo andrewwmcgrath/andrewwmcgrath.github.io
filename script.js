@@ -70,6 +70,3 @@ function submitForm() {
         answers.push(`${name} = ${value}`);
     }
     
-    // Show user their answers
-    alert(`You answered:\n${answers.join('\n')}`);
-}
