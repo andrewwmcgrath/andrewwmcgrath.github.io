@@ -53,16 +53,6 @@ function submitForm() {
         formData.append(selectElements[i].name, selectElements[i].value);
     }
 
-    // Collect answers
-    let answers = [];
-    for(let [name, value] of formData){
-        answers.push(`${name} = ${value}`);
-    }
-    
-    // Show user their answers
-    alert(`You answered:\n${answers.join('\n')}`);
-}
-
 
     // Collect answers
     let answers = [];
