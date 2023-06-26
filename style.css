@@ -1,17 +1,52 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #dfe7db; /* pale light green */
+    color: #333; /* Dark text for contrast */
+    padding: 20px; /* Some padding around the content */
 }
 
 h1 {
     text-align: center;
     font-size: 2em;
+    color: #036A81; /* Dark blue for the title */
 }
 
 h2 {
     font-size: 1.5em;
     font-weight: bold;
+    margin-top: 20px; /* Some space before each question */
+}
+
+p {
+    margin-bottom: 5px; /* Some space after each description */
 }
 
 form {
     margin-top: 20px;
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Some padding around the form content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Small shadow for a 3D effect */
+}
+
+label {
+    font-weight: bold; /* Make the labels bold */
+}
+
+select {
+    margin-bottom: 20px; /* Some space after each select dropdown */
+}
+
+button {
+    background-color: #036A81; /* Dark blue to match the title */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove the default button border */
+    padding: 10px 20px; /* Some padding around the text */
+    margin-top: 20px; /* Some space before the button */
+    cursor: pointer; /* Cursor should change when hovering the button */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+button:hover {
+    background-color: #02475b; /* Darker blue when hovering */
 }
