@@ -44,14 +44,25 @@ questions.forEach((questionObj, index) => {
 });
 
 function submitForm() {
-    let elements = form.elements;
+    let selectElements = form.getElementsByTagName('select');
+    let participantId = document.getElementById('participantId').value;
     let formData = new FormData();
 
-    for(let i = 0; i < elements.length; i++) {
-        if(elements[i].tagName.toLowerCase() === 'select') {
-            formData.append(elements[i].name, elements[i].value);
-        }
+    formData.append('participantId', participantId);
+    for(let i = 0; i < selectElements.length; i++) {
+        formData.append(selectElements[i].name, selectElements[i].value);
     }
+
+    // Collect answers
+    let answers = [];
+    for(let [name, value] of formData){
+        answers.push(`${name} = ${value}`);
+    }
+    
+    // Show user their answers
+    alert(`You answered:\n${answers.join('\n')}`);
+}
+
 
     // Collect answers
     let answers = [];
