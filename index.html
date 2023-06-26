@@ -6,12 +6,10 @@
 </head>
 <body>
     <h1>My Questionnaire</h1>
-    <div id="myForm">
+    <form id="myForm" onsubmit="event.preventDefault(); submitForm();">
         <!-- Form will be generated here -->
-    </div>
-    <div id="submit-button-container">
-        <button onclick="submitForm()">Submit</button>
-    </div>
+    </form>
+    <button type="submit" form="myForm">Submit</button>
     <script src="script.js"></script>
 </body>
 </html>
