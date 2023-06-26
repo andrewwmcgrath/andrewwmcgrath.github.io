@@ -1,15 +1,22 @@
 // Define your questions
-let questions = ['Question 1', 'Question 2', 'Question 3'];
-
+let questions = [
+    {text: 'Question 1', description: 'This is a description for question 1'},
+    {text: 'Question 2', description: 'This is a description for question 2'},
+    {text: 'Question 3', description: 'This is a description for question 3'},
+];
 // Get the form container
 let form = document.getElementById("myForm");
 
 // Iterate over each question
-questions.forEach((question, index) => {
+questions.forEach((questionObj, index) => {
     // Create question header
     let header = document.createElement("h2");
-    header.innerText = question;
+    header.innerText = questionObj.text;
     form.appendChild(header);
+
+    let desc = document.createElement("p");
+    desc.innerText = questionObj.description;
+    form.appendChild(desc);
 
     // Create select fields for Probability, Impact and Preparation
     ['Probability', 'Impact', 'Preparation'].forEach(choice => {
