@@ -1,26 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #dfe7db; /* pale light green */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 form {
     margin-top: 20px;
-}
-
-h2 {
-    font-size: 1.5em; /* enlarge the text */
-    font-weight: bold; /* make the text bold */
-    text-decoration: none; /* remove underline */
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-label {
-    margin-right: 10px;
-}
-
-#submit-button-container {
-    margin-top: 40px;
 }
