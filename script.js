@@ -6,7 +6,6 @@ let questions = [
     {text: 'Question 4', description: 'This is a description for question 4'},
     {text: 'Question 5', description: 'This is a description for question 5'},
     {text: 'Question 6', description: 'This is a description for question 6'},
-
 ];
 // Get the form container
 let form = document.getElementById("myForm");
