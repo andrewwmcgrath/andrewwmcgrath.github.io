@@ -72,6 +72,6 @@ function submitForm() {
         answers.push(`${name} = ${value}`);
     }
     
-    // Show user their answers
-    alert(`You answered:\n${answers.join('\n')}`);
+    // Redirect to the thank you page
+    window.location.href = 'thanks.html';
 }
