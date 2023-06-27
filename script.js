@@ -45,6 +45,13 @@ questions.forEach((questionObj, index) => {
     form.appendChild(document.createElement("br"));
 });
 
+// Assuming previous data 
+let prevCycleData = [
+    {prevValue: 3, avgValue: 4},
+    {prevValue: 3, avgValue: 4},
+    {prevValue: 3, avgValue: 4},
+];
+
 function submitForm() {
     let selectElements = form.getElementsByTagName('select');
     let participantId = document.getElementById('participantId').value;
