@@ -6,6 +6,7 @@ let questions = [
     {text: 'Ques', description: 'This is a  for question 4'},
     {text: 'Question 5', description: 'This is a description for question 5'},
 ];
+
 // Get the form container
 let form = document.getElementById("myForm");
 
@@ -67,7 +68,25 @@ function submitForm() {
     for(let [name, value] of formData){
         answers.push(`${name} = ${value}`);
     }
-    
+
+    // Save data as CSV
+    let csvContent = "data:text/csv;charset=utf-8,";
+    csvContent += "Participant ID,Question,Probability,Impact,Preparation\n";
+
+    let questionIndex = 0;
+    for (let i = 0; i < selectElements.length; i += 3) {
+        csvContent += `${participantId},${questions[questionIndex].text},${selectElements[i].value},${selectElements[i+1].value},${selectElements[i+2].value}\n`;
+        questionIndex++;
+    }
+
+    let encodedUri = encodeURI(csvContent);
+    let link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "form_data.csv");
+    document.body.appendChild(link);
+
+    link.click();
+
     // Redirect to the thank you page
     window.location.href = 'thanks.html';
 }
